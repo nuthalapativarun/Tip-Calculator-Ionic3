@@ -13,12 +13,11 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
   }
   percnetage(input:number){
-    console.log(input);
     this.tipAmount = (this.amount*input)/100;
-    console.log(this.tipAmount);
   }
   clear(){
     this.tipForm.reset();
+    this.tipAmount = 0;
   }
 
 }
